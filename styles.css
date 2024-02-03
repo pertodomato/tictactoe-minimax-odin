@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    margin-top: 10vh;
+    width: 55vh;
+    height: 55vh;
+    border: solid rebeccapurple 2px;
+    display: grid;
+    grid-template-columns: repeat(3, calc((55vh)/3) );
+    grid-template-rows: repeat(3, calc((55vh)/3) );
+}
+.cells{
+    display: flex;
+    background-color: white;
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-size: 15vh;
+    font-weight: 10;
+}
+.panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+    width: 55vh;
+    height: 15vh;
+    border: solid black 1px;
+}
+.buttons{
+    border: solid black 1px;
+    padding: 1vh;
+}
